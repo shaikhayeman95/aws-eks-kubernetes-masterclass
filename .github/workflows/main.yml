@@ -28,6 +28,6 @@ jobs:
 
       - name: Build, Tag, and Push Docker Image
         run: |
-          docker build -t <IMAGE_NAME> .
-          docker tag <IMAGE_NAME>:latest 631208496322.dkr.ecr.ap-south-1.amazonaws.com/ayeman/poc:latest
+          docker build -t docker_image_demo .
+          docker tag docker_image_demo:latest 631208496322.dkr.ecr.ap-south-1.amazonaws.com/ayeman/poc:latest
           docker push 631208496322.dkr.ecr.ap-south-1.amazonaws.com/ayeman/poc:latest
